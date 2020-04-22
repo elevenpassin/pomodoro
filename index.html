@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="mdc-typography">
+  <header class="mdc-top-app-bar">
+    <div class="mdc-top-app-bar__row">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <span class="mdc-top-app-bar__title">Pomodoro</span>
+      </section>
+    </div>
+  </header>
+  <div class="mdc-top-app-bar--fixed-adjust dc-layout-grid">
+    <div class="mdc-layout-grid__inner layout_inner">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+        <div class="mdc-card timer card card--center-content">
+          <div class="timer">
+            <h2 class="card__title mdc-typography mdc-typography--headline6">Start the timer!</h2>
+            <h1 id="label" class="mdc-typography mdc-typography--headline1">00</h1>
+            <h3 class="card__subtitle mdc-typography mdc-typography--subtitle2">Minutes</h3>
+          </div>
+          <div class="mdc-card__actions">
+            <div class="mdc-card__action-buttons actions">
+              <button class="mdc-button mdc-card__action mdc-card__action--button">
+                <div class="mdc-button__ripple"></div>
+                <span class="mdc-button__label">Start</span>
+              </button>
+              <button class="mdc-button mdc-card__action mdc-card__action--button">
+                <div class="mdc-button__ripple"></div>
+                <span class="mdc-button__label">Edit</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+        <div class="mdc-card card">
+          <h2 class="card__title mdc-typography mdc-typography--headline6">History</h2>
+          <div class="mdc-data-table">
+            <table class="mdc-data-table__table">
+              <thead>
+                <tr class="mdc-data-table__header-row">
+                  <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Timespan</th>
+                  <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Rounds</th>
+                  <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Breaks</th>
+                </tr>
+              </thead>
+              <tbody class="mdc-data-table__content">
+                <tr data-row-id="u3" class="mdc-data-table__row" aria-selected="false">
+                  <td class="mdc-data-table__cell" id="u3">Frozen yogurt</td>
+                  <td class="mdc-data-table__cell mdc-data-table__cell--numeric">159</td>
+                  <td class="mdc-data-table__cell mdc-data-table__cell--numeric">6</td>
+                </tr>
+                <tr data-row-id="u4" class="mdc-data-table__row" aria-selected="false">
+                  <td class="mdc-data-table__cell" id="u4">Ice cream sandwich</td>
+                  <td class="mdc-data-table__cell mdc-data-table__cell--numeric">237</td>
+                  <td class="mdc-data-table__cell mdc-data-table__cell--numeric">9</td>
+                </tr>
+                <tr data-row-id="u5" class="mdc-data-table__row" aria-selected="false">
+                  <td class="mdc-data-table__cell" id="u5">Eclair</td>
+                  <td class="mdc-data-table__cell mdc-data-table__cell--numeric">262</td>
+                  <td class="mdc-data-table__cell mdc-data-table__cell--numeric">16</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

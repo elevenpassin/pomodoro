@@ -1,0 +1,42 @@
+.layout_inner {
+  margin: 20px;
+}
+
+.card {
+  margin: auto;
+  padding: 1rem;
+  width: 300px;
+}
+
+.card--center-content {
+  text-align: center;
+}
+
+.timer {
+  padding: 1rem;
+}
+
+.actions {
+  margin: auto;
+}
+
+
+#label {
+  margin: 0.4em;
+}
+
+
+
+.timer .card__subtitle {
+  color: var(--mdc-theme-text-secondary-on-background,rgba(0,0,0,.54))
+}
+
+.timer .card__title, .timer .card__subtitle {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 400px;
+  }
+}
