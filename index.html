@@ -24,19 +24,19 @@
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
         <div class="mdc-card timer card card--center-content">
           <div class="timer">
-            <h2 class="card__title mdc-typography mdc-typography--headline6">Start the timer!</h2>
-            <h1 id="label" class="mdc-typography mdc-typography--headline1">00</h1>
-            <h3 class="card__subtitle mdc-typography mdc-typography--subtitle2">Minutes</h3>
+            <h2 id="timer__primary" class="card__title mdc-typography mdc-typography--headline6">Start the timer!</h2>
+            <h1 id="timer__main" class="mdc-typography mdc-typography--headline1">00</h1>
+            <h3 id="timer__secondary" class="card__subtitle mdc-typography mdc-typography--subtitle2">Minutes</h3>
           </div>
           <div class="mdc-card__actions">
             <div class="mdc-card__action-buttons actions">
-              <button class="mdc-button mdc-card__action mdc-card__action--button">
+              <button id="timer__toggle" class="mdc-button mdc-card__action mdc-card__action--button">
                 <div class="mdc-button__ripple"></div>
                 <span class="mdc-button__label">Start</span>
               </button>
-              <button class="mdc-button mdc-card__action mdc-card__action--button">
+              <button id="timer__stop" class="mdc-button mdc-card__action mdc-card__action--button">
                 <div class="mdc-button__ripple"></div>
-                <span class="mdc-button__label">Edit</span>
+                <span class="mdc-button__label">Stop</span>
               </button>
             </div>
           </div>
@@ -74,10 +74,6 @@
             </table>
           </div>
         </div>
-
-
-
-
       </div>
     </div>
   </div>
